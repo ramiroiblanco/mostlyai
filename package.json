@@ -1,0 +1,14 @@
+{
+  "name": "mostly",
+  "version": "1.0.0",
+  "description": "Mostly AI exercise",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ramiro Blanco",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^10.1.0"
+  }
+}
