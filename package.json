@@ -9,6 +9,7 @@
   "author": "Ramiro Blanco",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^10.1.0"
+    "cypress": "^10.1.0",
+    "typescript": "^4.7.4"
   }
 }

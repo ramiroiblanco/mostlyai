@@ -19,12 +19,12 @@ describe('Mostly AI', () => {
 
   })
 
-  function doSearch(text){
+  function doSearch(text: string): void {
     cy.get('button[aria-label="Open search"]').click({force: true})
     cy.get('.oxy-header-search_search-field').type(text, {force: true})
   }
 
-  function verifyByText(text) {
+  function verifyByText(text: string): void {
     cy.contains(text).should('be.visible')
   }
 })
