@@ -1,6 +1,7 @@
 describe('Mostly AI', () => {
   beforeEach(() => {
     cy.visit('https://mostly.ai/')
+
   })
 
   it('Verifies all bookmarks display on screen', () => {
@@ -17,6 +18,20 @@ describe('Mostly AI', () => {
     doSearch(searchValue)
 
     searchResultStrings.forEach(string => verifyElementByText(string))
+  })
+
+  it.only('Verifies empty search results', () => {
+    cy.contains('Contact').click({force: true})
+    cy.get('#CookieBoxSaveButton').click()
+    cy.contains('Contact').click().click()
+
+    cy.contains("We'll get back").click()
+    cy.get('input[name="firstname"]').type('Ramiro')
+    cy.get('input[name="lastname"]').type('Blanco')
+    cy.get('input[name="email"][class="hs-input"]').type('ramiroiblanco1980@mybusiness.com')
+    cy.get('input[name="company"]').type('Ramiro Inc.')
+    cy.get('textarea[class="hs-input"]').type("I'd like to know more about you!")
+    cy.get('input[type="checkbox"][class="hs-input"]').click()
   })
 })
 
