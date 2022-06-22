@@ -44,3 +44,7 @@ There were some issues found during the development of the tests that could requ
 * The cookies pop-up caused some issues while developing the tests. These were resolved by forcing clicks or handling the popup in specific cases. However, for a proper test suite, this should be resolved in a more scalable way.
 * The navigation tabs behavior was not the same when clicking options in the browser and when clicking using the cy.click() command. Therefore, sometimes multiple clicks were necessary. Again, a more scalable solution is needed here.
 * The form could sometimes take more than the default 4 second Cypress wait to load, therefore, this waiting period was extended in the Cypress configuration file.
+
+##Learnings
+* I had the chance to look into the latest version of Cypress (the last time I had used Cypress was version 4.0).
+* I had the chance to use TypeScript with Cypress, before I had only used JavaScript.
