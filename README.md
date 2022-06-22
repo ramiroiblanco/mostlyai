@@ -1,6 +1,7 @@
 ##Description
 
 This repository consists of some basic UI tests against the mostly.ai page using the Cypress framework.
+The tests are located in the mostly/cypress/e2e/mostly.cy.ts file.
 
 ##System requirements
 
